@@ -19,7 +19,8 @@
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
       }
-      body {
+      body,
+      .text-base {
         font-family: "Open Sans", sans-serif;
         font-optical-sizing: auto;
       }
@@ -41,90 +42,98 @@
         alt="Background Image"
         class="object-cover object-top absolute inset-0 z-0 aspect-[100] size-full max-md:flex max-md:max-w-full max-sm:flex"
       />
-
-      <div
-        class="flex z-0 flex-col items-center pb-24 w-full max-md:pb-12 max-md:max-w-full"
+      <!--navigation starts-->
+      <nav
+        class="flex z-0 overflow-hidden flex-col justify-center items-center py-6 text-sm font-semibold"
+        aria-label="Main navigation"
       >
-        <nav
-          class="flex overflow-hidden flex-col justify-center items-center py-6 w-full text-sm font-semibold max-md:max-w-full"
-          aria-label="Main navigation"
+        <div
+          class="flex flex-wrap items-center px-5 w-full max-w-[1200px] max-md:justify-between max-md:max-w-full"
         >
-          <div
-            class="flex flex-wrap items-center px-5 w-full max-w-[1200px] max-md:justify-between max-md:max-w-full"
+          <a href="./index.html">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/103b8e0482a24683b7d403ff18ee39c1/b49e9b844fc35a826d5f7e8ad6a85a36092fd374b38ebd94bd3a6f2f48f24be5?apiKey=b4347ff119db4caaadf869e0e6b3d13d&"
+              alt="Company Logo"
+              class="object-contain shrink-0 self-stretch my-auto aspect-[2.93] w-[88px]"
+            />
+          </a>
+          <button
+            class="hidden flex overflow-hidden flex-col bg-blend-normal cursor-pointer pointer-events-auto max-w-[16px] max-md:flex max-md:flex-row max-md:flex-wrap max-md:justify-center max-md:items-center max-md:w-5 max-md:h-5 max-md:max-w-[20px] max-md:min-h-[20px] max-md:flex"
+            aria-label="Toggle navigation menu"
           >
-            <a href="./index.html">
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/103b8e0482a24683b7d403ff18ee39c1/b49e9b844fc35a826d5f7e8ad6a85a36092fd374b38ebd94bd3a6f2f48f24be5?apiKey=b4347ff119db4caaadf869e0e6b3d13d&"
-                alt="Company Logo"
-                class="object-contain shrink-0 self-stretch my-auto aspect-[2.93] w-[88px]"
-              />
-            </a>
-
-            <button
-              class="hidden flex overflow-hidden flex-col bg-blend-normal cursor-pointer pointer-events-auto max-w-[16px] max-md:flex max-md:flex-row max-md:flex-wrap max-md:justify-center max-md:items-center max-md:w-5 max-md:h-5 max-md:max-w-[20px] max-md:min-h-[20px] max-md:flex"
-              aria-label="Toggle navigation menu"
-            >
-              <img
-                loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/103b8e0482a24683b7d403ff18ee39c1/142fb749dab2b391519dbce636cc3819cb5ae6f763d0afff61dcd573bd9aff8b?apiKey=b4347ff119db4caaadf869e0e6b3d13d&"
-                alt="Menu icon"
-                class="object-contain w-full aspect-[1.6] stroke-[2px] stroke-white max-md:m-auto max-md:w-3.5"
-              />
-            </button>
-
-            <div
-              class="flex flex-wrap flex-1 shrink gap-10 justify-center items-center self-stretch px-5 my-auto leading-none text-white basis-[54px] min-w-[240px] max-md:hidden max-md:max-w-full max-sm:hidden"
-            >
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/103b8e0482a24683b7d403ff18ee39c1/142fb749dab2b391519dbce636cc3819cb5ae6f763d0afff61dcd573bd9aff8b?apiKey=b4347ff119db4caaadf869e0e6b3d13d&"
+              alt="Menu icon"
+              class="object-contain w-full aspect-[1.6] stroke-[2px] stroke-white max-md:m-auto max-md:w-3.5"
+            />
+          </button>
+          <ul
+            class="flex flex-wrap flex-1 shrink gap-10 justify-center items-center self-stretch px-5 my-auto leading-none basis-[54px] min-w-[240px] text-white max-md:hidden max-md:max-w-full max-sm:hidden"
+            role="menubar"
+          >
+            <li role="none">
               <a
                 href="./network-transformation.html"
-                class="gap-2.5 self-stretch my-auto whitespace-nowrap cursor-pointer pointer-events-auto text-base font-medium leading-normal"
-                aria-label="Transformation section"
+                class="gap-2.5 self-stretch my-auto whitespace-nowrap min-h-[50px]"
+                role="menuitem"
               >
                 Transformation
               </a>
+            </li>
+            <li role="none">
               <a
                 href="./network-security.html"
-                class="gap-2.5 self-stretch my-auto whitespace-nowrap cursor-pointer pointer-events-auto text-base font-medium leading-normal"
-                aria-label="Security section"
+                class="gap-2.5 self-stretch my-auto whitespace-nowrap min-h-[50px]"
+                role="menuitem"
               >
                 Security
               </a>
+            </li>
+            <li role="none">
               <a
                 href="./network-lifecycle.html"
-                class="gap-2.5 self-stretch my-auto cursor-pointer pointer-events-auto text-base font-medium leading-normal"
-                aria-label="Lifecycle Management section"
+                class="gap-2.5 self-stretch my-auto min-h-[50px]"
+                role="menuitem"
               >
                 Lifecycle Management
               </a>
+            </li>
+            <li role="none">
               <a
                 href="./network-automation.html"
-                class="gap-2.5 self-stretch my-auto cursor-pointer pointer-events-auto text-base font-medium leading-normal"
-                aria-label="AI and Automation section"
+                class="gap-2.5 self-stretch my-auto min-h-[50px]"
+                role="menuitem"
               >
                 AI & Automation
               </a>
+            </li>
+            <li role="none">
               <a
                 href="./case-studies.html"
-                class="gap-2.5 self-stretch my-auto cursor-pointer pointer-events-auto text-base font-medium leading-normal"
-                aria-label="Case Studies section"
+                class="gap-2.5 self-stretch my-auto min-h-[50px]"
+                role="menuitem"
               >
                 Case Studies
               </a>
-            </div>
-
-            <a
-              href="./contact.html"
-              class="overflow-hidden gap-2.5 self-stretch px-12 py-4 my-auto leading-none text-center bg-white rounded-md cursor-pointer pointer-events-auto text-zinc-800 w-[180px] max-md:hidden text-base font-medium leading-normal"
-              aria-label="Contact us"
-            >
-              Let's Talk
-            </a>
-          </div>
-        </nav>
-
+            </li>
+          </ul>
+          <a
+            href="./contact.html"
+            class="overflow-hidden gap-2.5 self-stretch max-md:hidden px-12 py-4 my-auto leading-none text-center text-zinc-800 bg-white rounded-md max-w-[180px] w-[180px] max-md:px-5"
+            role="button"
+          >
+            Let's Talk
+          </a>
+        </div>
+      </nav>
+      <!--navigation ends-->
+      <div
+        class="flex z-0 flex-col items-center pb-24 w-full max-md:pb-12 max-md:max-w-full"
+      >
         <main
-          class="flex flex-col justify-center p-2.5 mt-36 max-w-full w-[1200px] max-md:mt-10"
+          class="flex flex-col justify-center p-2.5 mt-[80px] max-w-full w-[1200px] max-md:mt-10"
         >
           <div
             class="flex flex-col justify-center w-full max-md:items-center max-md:max-w-full"
@@ -252,7 +261,9 @@
                     class="flex mt-5 bg-green-600 min-h-[5px] w-[60px] max-sm:mt-4"
                     role="presentation"
                   ></div>
-                  <p class="mt-5 text-base leading-6 max-md:max-w-full">
+                  <p
+                    class="mt-5 text-base leading-6 font-normal max-md:max-w-full"
+                  >
                     We modernise networks for today's distributed workforce and
                     smart spaces. Our lifecycle management ensures robust,
                     scalable solutions meeting business and customer needs.
@@ -268,7 +279,8 @@
                         alt=""
                         role="presentation"
                       />
-                      <span class="flex-1 shrink basis-0 max-md:max-w-full"
+                      <span
+                        class="flex-1 shrink basis-0 font-['Montserrat'] max-md:max-w-full"
                         >Network Assessment & Strategy</span
                       >
                     </li>
@@ -282,7 +294,8 @@
                         alt=""
                         role="presentation"
                       />
-                      <span class="flex-1 shrink basis-0 max-md:max-w-full"
+                      <span
+                        class="flex-1 shrink basis-0 font-['Montserrat'] max-md:max-w-full"
                         >Network Design & Transformation Roadmaps</span
                       >
                     </li>
@@ -296,7 +309,8 @@
                         alt=""
                         role="presentation"
                       />
-                      <span class="flex-1 shrink basis-0 max-md:max-w-full"
+                      <span
+                        class="flex-1 shrink basis-0 font-['Montserrat'] max-md:max-w-full"
                         >Enhanced & Optimised Network Security</span
                       >
                     </li>
@@ -310,14 +324,15 @@
                         alt=""
                         role="presentation"
                       />
-                      <span class="flex-1 shrink basis-0 max-md:max-w-full"
+                      <span
+                        class="flex-1 shrink basis-0 font-['Montserrat'] max-md:max-w-full"
                         >Cloud Integration & Migration</span
                       >
                     </li>
                   </ul>
                   <a
                     href="#"
-                    class="overflow-hidden gap-2.5 self-start px-5 py-4 mt-5 text-white bg-teal-700 rounded-md hover:bg-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                    class="overflow-hidden gap-2.5 self-start px-5 py-4 mt-5 text-white bg-teal-700 rounded-md hover:bg-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-font-['Montserrat'] offset-2"
                     role="button"
                   >
                     Learn More
@@ -344,7 +359,7 @@
                     role="presentation"
                   ></div>
                   <p
-                    class="mt-5 text-base leading-6 max-md:max-w-full max-sm:mt-4"
+                    class="mt-5 text-base leading-6 font-normal max-md:max-w-full max-sm:mt-4"
                   >
                     With a growing number of connected devices and remote
                     working. Threats multiply. VCG shields your entire
@@ -362,7 +377,8 @@
                         alt=""
                         role="presentation"
                       />
-                      <span class="flex-1 shrink basis-0 max-md:max-w-full"
+                      <span
+                        class="flex-1 shrink basis-0 font-['Montserrat'] max-md:max-w-full"
                         >Managed Security Services</span
                       >
                     </li>
@@ -376,7 +392,8 @@
                         alt=""
                         role="presentation"
                       />
-                      <span class="flex-1 shrink basis-0 max-md:max-w-full"
+                      <span
+                        class="flex-1 shrink basis-0 font-['Montserrat'] max-md:max-w-full"
                         >Zero Trust Network implementation</span
                       >
                     </li>
@@ -390,7 +407,8 @@
                         alt=""
                         role="presentation"
                       />
-                      <span class="flex-1 shrink basis-0 max-md:max-w-full"
+                      <span
+                        class="flex-1 shrink basis-0 font-['Montserrat'] max-md:max-w-full"
                         >Endpoint & Application Security</span
                       >
                     </li>
@@ -404,14 +422,15 @@
                         alt=""
                         role="presentation"
                       />
-                      <span class="flex-1 shrink basis-0 max-md:max-w-full"
+                      <span
+                        class="flex-1 shrink basis-0 font-['Montserrat'] max-md:max-w-full"
                         >Identity & Access Management</span
                       >
                     </li>
                   </ul>
                   <a
                     href="#"
-                    class="overflow-hidden gap-2.5 self-start px-5 py-4 mt-5 text-white bg-teal-700 rounded-md hover:bg-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                    class="overflow-hidden gap-2.5 self-start px-5 py-4 mt-5 text-white bg-teal-700 rounded-md hover:bg-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-font-['Montserrat'] offset-2"
                     role="button"
                   >
                     Learn More
@@ -439,7 +458,9 @@
                     class="flex mt-5 bg-green-600 min-h-[5px] w-[60px] max-sm:mt-4"
                     role="presentation"
                   ></div>
-                  <p class="mt-5 text-base leading-6 max-md:max-w-full">
+                  <p
+                    class="mt-5 text-base leading-6 font-normal max-md:max-w-full"
+                  >
                     Maintaining current, secure, and cost-effective networks is
                     challenging. VCG's lifecycle management keeps you relevant
                     in today's fast-evolving digital landscape.
@@ -455,7 +476,8 @@
                         alt=""
                         role="presentation"
                       />
-                      <span class="flex-1 shrink basis-0 max-md:max-w-full"
+                      <span
+                        class="flex-1 shrink basis-0 font-['Montserrat'] max-md:max-w-full"
                         >Managed Services</span
                       >
                     </li>
@@ -469,7 +491,8 @@
                         alt=""
                         role="presentation"
                       />
-                      <span class="flex-1 shrink basis-0 max-md:max-w-full"
+                      <span
+                        class="flex-1 shrink basis-0 font-['Montserrat'] max-md:max-w-full"
                         >Deployment and Implementation</span
                       >
                     </li>
@@ -483,7 +506,8 @@
                         alt=""
                         role="presentation"
                       />
-                      <span class="flex-1 shrink basis-0 max-md:max-w-full"
+                      <span
+                        class="flex-1 shrink basis-0 font-['Montserrat'] max-md:max-w-full"
                         >Optimisation and Management</span
                       >
                     </li>
@@ -497,14 +521,15 @@
                         alt=""
                         role="presentation"
                       />
-                      <span class="flex-1 shrink basis-0 max-md:max-w-full"
+                      <span
+                        class="flex-1 shrink basis-0 font-['Montserrat'] max-md:max-w-full"
                         >Refresh and Evolution</span
                       >
                     </li>
                   </ul>
                   <a
                     href="#"
-                    class="overflow-hidden gap-2.5 self-start px-5 py-4 mt-5 text-white bg-teal-700 rounded-md hover:bg-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                    class="overflow-hidden gap-2.5 self-start px-5 py-4 mt-5 text-white bg-teal-700 rounded-md hover:bg-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-font-['Montserrat'] offset-2"
                     role="button"
                   >
                     Learn More
@@ -531,7 +556,7 @@
                     role="presentation"
                   ></div>
                   <p
-                    class="mt-5 text-base leading-6 max-md:max-w-full max-sm:mt-4"
+                    class="mt-5 text-base leading-6 font-normal max-md:max-w-full max-sm:mt-4"
                   >
                     Our AI-driven network automation boosts efficiency and
                     adaptability. It simplifies operations, enhances
@@ -548,7 +573,8 @@
                         alt=""
                         role="presentation"
                       />
-                      <span class="flex-1 shrink basis-0 max-md:max-w-full"
+                      <span
+                        class="flex-1 shrink basis-0 font-['Montserrat'] max-md:max-w-full"
                         >Intelligent Network Management</span
                       >
                     </li>
@@ -562,7 +588,8 @@
                         alt=""
                         role="presentation"
                       />
-                      <span class="flex-1 shrink basis-0 max-md:max-w-full"
+                      <span
+                        class="flex-1 shrink basis-0 font-['Montserrat'] max-md:max-w-full"
                         >AI-Driven Security</span
                       >
                     </li>
@@ -576,7 +603,8 @@
                         alt=""
                         role="presentation"
                       />
-                      <span class="flex-1 shrink basis-0 max-md:max-w-full"
+                      <span
+                        class="flex-1 shrink basis-0 font-['Montserrat'] max-md:max-w-full"
                         >Network Analytics and Insights</span
                       >
                     </li>
@@ -590,14 +618,15 @@
                         alt=""
                         role="presentation"
                       />
-                      <span class="flex-1 shrink basis-0 max-md:max-w-full"
+                      <span
+                        class="flex-1 shrink basis-0 font-['Montserrat'] max-md:max-w-full"
                         >Automation of Routine Tasks</span
                       >
                     </li>
                   </ul>
                   <a
                     href="#"
-                    class="overflow-hidden gap-2.5 self-start px-5 py-4 mt-5 text-white bg-teal-700 rounded-md hover:bg-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2"
+                    class="overflow-hidden gap-2.5 self-start px-5 py-4 mt-5 text-white bg-teal-700 rounded-md hover:bg-teal-800 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-font-['Montserrat'] offset-2"
                     role="button"
                   >
                     Learn More
@@ -934,14 +963,14 @@
         />
         <blockquote class="flex z-0 flex-col self-center max-w-full w-[1100px]">
           <p
-            class="text-3xl leading-8 text-white max-md:max-w-full max-sm:text-xl max-sm:leading-6"
+            class="text-3xl leading-8 font-['Montserrat'] text-white max-md:max-w-full max-sm:text-xl max-sm:leading-6"
           >
             "VCG has been instrumental in transforming our network. Their
             expertise and innovative solutions have greatly improved our
             system's performance, reliability, and scalability."
           </p>
           <footer
-            class="mt-10 text-xl font-semibold leading-tight text-green-400 max-md:max-w-full max-sm:text-lg"
+            class="mt-10 text-xl font-semibold font-['Montserrat'] leading-tight text-green-400 max-md:max-w-full max-sm:text-lg"
           >
             Mark Brigham, CEO, Poundland
           </footer>
@@ -985,7 +1014,7 @@
             </p>
           </article>
           <button
-            class="overflow-hidden gap-2.5 self-start px-5 py-4 mt-10 text-sm font-semibold leading-none text-white bg-green-400 rounded-md"
+            class="overflow-hidden gap-2.5 self-start px-5 py-4 mt-10 text-sm font-semibold leading-none text-white bg-green-400 font-['Montserrat'] rounded-md"
             tabindex="0"
           >
             Let's Talk
@@ -1039,7 +1068,9 @@
                       alt=""
                       class="object-contain shrink-0 self-stretch my-auto w-6 bg-blend-normal aspect-square"
                     />
-                    <span class="self-stretch my-auto">0161 406 1820</span>
+                    <span class="self-stretch my-auto font-['Montserrat']"
+                      >0161 406 1820</span
+                    >
                   </a>
                   <a
                     href="mailto:info@vcg.group"
@@ -1052,7 +1083,9 @@
                       alt=""
                       class="object-contain shrink-0 self-stretch my-auto w-6 bg-blend-normal aspect-square"
                     />
-                    <span class="self-stretch my-auto">info@vcg.group</span>
+                    <span class="self-stretch my-auto font-['Montserrat']"
+                      >info@vcg.group</span
+                    >
                   </a>
                 </address>
               </div>
@@ -1101,17 +1134,17 @@
               >
               <a
                 href="./network-security.html"
-                class="mt-2.5 text-white hover:text-green-400 transition-colors"
+                class="mt-2.5 text-white hover:text-green-400 font-['Montserrat'] transition-colors"
                 >Network Security</a
               >
               <a
                 href="./network-lifecycle.html"
-                class="self-stretch mt-2.5 text-white hover:text-green-400 transition-colors"
+                class="self-stretch mt-2.5 text-white font-['Montserrat'] hover:text-green-400 transition-colors"
                 >Network Lifecycle Management</a
               >
               <a
                 href="./network-automation.html"
-                class="mt-2.5 text-white hover:text-green-400 transition-colors"
+                class="mt-2.5 text-white hover:text-green-400 font-['Montserrat'] transition-colors"
                 >Network Automation & AI</a
               >
             </nav>
@@ -1126,30 +1159,30 @@
               class="flex flex-wrap gap-10 items-center self-center mt-8 max-md:max-w-full"
               aria-label="Legal Links"
             >
-              <p class="self-stretch my-auto">© 2024 VCG</p>
+              <p class="self-stretch my-auto font-['Montserrat']">© 2024 VCG</p>
               <a
                 href="./cookie-policy.html"
-                class="self-stretch my-auto text-white hover:text-green-400 transition-colors"
+                class="self-stretch my-auto text-white font-['Montserrat'] hover:text-green-400 transition-colors"
                 >Cookie Policy</a
               >
               <a
                 href="./privacy-policy.html"
-                class="self-stretch my-auto text-white hover:text-green-400 transition-colors"
+                class="self-stretch my-auto text-white font-['Montserrat'] hover:text-green-400 transition-colors"
                 >Privacy Policy</a
               >
               <a
                 href="./terms-condition.html"
-                class="self-stretch my-auto text-white hover:text-green-400 transition-colors"
+                class="self-stretch my-auto text-white font-['Montserrat'] hover:text-green-400 transition-colors"
                 >Terms & Conditions</a
               >
               <a
                 href="./moder-slavery-statement.html"
-                class="self-stretch my-auto text-white hover:text-green-400 transition-colors"
+                class="self-stretch my-auto text-white font-['Montserrat'] hover:text-green-400 transition-colors"
                 >Modern Slavery Statement</a
               >
               <a
                 href="./sitemap.html"
-                class="self-stretch my-auto text-white hover:text-green-400 transition-colors"
+                class="self-stretch my-auto text-white font-['Montserrat'] hover:text-green-400 transition-colors"
                 >Sitemap</a
               >
             </nav>

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+      }
+      body,
+      .text-base {
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+      }
+      header nav a,
+      [aria-label="Main navigation"] a {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <!--navigation starts-->
+    <nav
+      class="flex overflow-hidden flex-col justify-center items-center py-6 text-sm font-semibold bg-teal-900"
+      aria-label="Main navigation"
+    >
+      <div
+        class="flex flex-wrap items-center px-5 w-full max-w-[1200px] max-md:justify-between max-md:max-w-full"
+      >
+        <a href="./index.html">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/103b8e0482a24683b7d403ff18ee39c1/b49e9b844fc35a826d5f7e8ad6a85a36092fd374b38ebd94bd3a6f2f48f24be5?apiKey=b4347ff119db4caaadf869e0e6b3d13d&"
+            alt="Company Logo"
+            class="object-contain shrink-0 self-stretch my-auto aspect-[2.93] w-[88px]"
+          />
+        </a>
+        <button
+          class="hidden flex overflow-hidden flex-col bg-blend-normal cursor-pointer pointer-events-auto max-w-[16px] max-md:flex max-md:flex-row max-md:flex-wrap max-md:justify-center max-md:items-center max-md:w-5 max-md:h-5 max-md:max-w-[20px] max-md:min-h-[20px] max-md:flex"
+          aria-label="Toggle navigation menu"
+        >
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/103b8e0482a24683b7d403ff18ee39c1/142fb749dab2b391519dbce636cc3819cb5ae6f763d0afff61dcd573bd9aff8b?apiKey=b4347ff119db4caaadf869e0e6b3d13d&"
+            alt="Menu icon"
+            class="object-contain w-full aspect-[1.6] stroke-[2px] stroke-white max-md:m-auto max-md:w-3.5"
+          />
+        </button>
+        <ul
+          class="flex flex-wrap flex-1 shrink gap-10 justify-center items-center self-stretch px-5 my-auto leading-none basis-[54px] min-w-[240px] text-white max-md:hidden max-md:max-w-full max-sm:hidden"
+          role="menubar"
+        >
+          <li role="none">
+            <a
+              href="./network-transformation.html"
+              class="gap-2.5 self-stretch my-auto whitespace-nowrap min-h-[50px]"
+              role="menuitem"
+            >
+              Transformation
+            </a>
+          </li>
+          <li role="none">
+            <a
+              href="./network-security.html"
+              class="gap-2.5 self-stretch my-auto whitespace-nowrap min-h-[50px]"
+              role="menuitem"
+            >
+              Security
+            </a>
+          </li>
+          <li role="none">
+            <a
+              href="./network-lifecycle.html"
+              class="gap-2.5 self-stretch my-auto min-h-[50px]"
+              role="menuitem"
+            >
+              Lifecycle Management
+            </a>
+          </li>
+          <li role="none">
+            <a
+              href="./network-automation.html"
+              class="gap-2.5 self-stretch my-auto min-h-[50px]"
+              role="menuitem"
+            >
+              AI & Automation
+            </a>
+          </li>
+          <li role="none">
+            <a
+              href="./case-studies.html"
+              class="gap-2.5 self-stretch my-auto min-h-[50px]"
+              role="menuitem"
+            >
+              Case Studies
+            </a>
+          </li>
+        </ul>
+        <a
+          href="./contact.html"
+          class="overflow-hidden gap-2.5 self-stretch max-md:hidden px-12 py-4 my-auto leading-none text-center text-white bg-green-400 rounded-md max-w-[180px] w-[180px] max-md:px-5"
+          role="button"
+        >
+          Let's Talk
+        </a>
+      </div>
+    </nav>
+    <!--navigation ends-->
+
+    <!--contact hero starts-->
+    <section class="flex overflow-hidden relative flex-col pb-12 bg-white">
+      <div
+        class="flex absolute inset-x-0 top-0 w-full bg-teal-900 min-h-[590px] max-md:max-w-full max-md:min-h-[400px]"
+      ></div>
+      <div
+        class="flex z-10 flex-col self-center px-5 pt-20 w-full max-w-[1200px] max-md:mt-0 max-md:max-w-full"
+      >
+        <section
+          class="flex flex-wrap gap-5 justify-between items-start"
+          aria-labelledby="contact-heading"
+        >
+          <header
+            class="flex flex-col text-5xl font-bold leading-none min-w-[240px] max-md:max-w-full max-md:text-4xl"
+          >
+            <h2
+              id="contact-heading"
+              class="text-white max-md:max-w-full max-md:text-4xl"
+            >
+              Ready to Transform
+            </h2>
+            <p class="text-green-400 max-md:text-4xl">Your Network?</p>
+          </header>
+
+          <nav
+            class="flex flex-col text-xl font-semibold leading-tight text-white w-[198px]"
+            aria-label="Contact Information"
+          >
+            <a
+              href="tel:01614061820"
+              class="flex gap-2.5 items-center w-full hover:text-green-400 focus:outline-none focus:ring-2 focus:ring-green-400"
+            >
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/103b8e0482a24683b7d403ff18ee39c1/0d609d8febdb9e27c59f4a1b5c1c60e11bc5ee4ae7960f0d77caee2c5b76b595?apiKey=2e62dfcc8761461495e7df443835bdaa&width=24"
+                alt="Phone icon"
+                class="object-contain shrink-0 self-stretch my-auto w-6 bg-blend-normal aspect-square"
+              />
+              <span class="self-stretch my-auto">0161 406 1820</span>
+            </a>
+
+            <a
+              href="mailto:info@vcg.group"
+              class="flex gap-2.5 justify-center items-center mt-5 w-full whitespace-nowrap hover:text-green-400 focus:outline-none focus:ring-2 focus:ring-green-400"
+            >
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/103b8e0482a24683b7d403ff18ee39c1/e0add20162338de3741064a103e4b429c87cf2d8faca173e79423caeeef28e88?apiKey=2e62dfcc8761461495e7df443835bdaa&width=24"
+                alt="Email icon"
+                class="object-contain shrink-0 self-stretch my-auto w-6 bg-blend-normal aspect-square"
+              />
+              <span class="self-stretch my-auto w-[164px]">info@vcg.group</span>
+            </a>
+          </nav>
+
+          <p class="text-base text-white max-md:max-w-full">
+            Partner with VCG on a transformation journey that drives innovation
+            and positions you for long-term success.
+          </p>
+        </section>
+
+        <section
+          class="flex overflow-hidden flex-wrap gap-10 items-start px-24 py-10 mt-10 bg-white rounded-xl max-md:px-5"
+        >
+          <form class="flex flex-wrap w-full gap-10">
+            <div
+              class="flex flex-col grow shrink min-w-[240px] w-[417px] max-md:max-w-full"
+            >
+              <label
+                for="fullName"
+                class="text-sm font-semibold leading-none text-black mb-2.5"
+                >Your Name</label
+              >
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                required
+                aria-required="true"
+                class="flex flex-1 w-full bg-white rounded-md border border-solid border-zinc-300 min-h-[50px] p-3 max-md:max-w-full"
+              />
+            </div>
+
+            <div
+              class="flex flex-col grow shrink min-w-[240px] w-[417px] max-md:max-w-full"
+            >
+              <label
+                for="companyName"
+                class="text-sm font-semibold leading-none text-black mb-2.5"
+                >Company Name</label
+              >
+              <input
+                type="text"
+                id="companyName"
+                name="companyName"
+                required
+                aria-required="true"
+                class="flex flex-1 w-full bg-white rounded-md border border-solid border-zinc-300 min-h-[50px] p-3 max-md:max-w-full"
+              />
+            </div>
+
+            <div
+              class="flex flex-col grow shrink min-w-[240px] w-[417px] max-md:max-w-full"
+            >
+              <label
+                for="email"
+                class="text-sm font-semibold leading-none text-black mb-2.5"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                aria-required="true"
+                class="flex flex-1 w-full bg-white rounded-md border border-solid border-zinc-300 min-h-[50px] p-3 max-md:max-w-full"
+              />
+            </div>
+
+            <div
+              class="flex flex-col grow shrink min-w-[240px] w-[417px] max-md:max-w-full"
+            >
+              <label
+                for="phone"
+                class="text-sm font-semibold leading-none text-black mb-2.5"
+                >Phone Number</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                aria-required="true"
+                class="flex flex-1 w-full bg-white rounded-md border border-solid border-zinc-300 min-h-[50px] p-3 max-md:max-w-full"
+              />
+            </div>
+
+            <div
+              class="flex flex-col grow shrink min-w-[240px] w-[917px] max-md:max-w-full"
+            >
+              <label
+                for="message"
+                class="text-sm font-semibold leading-none text-black mb-2.5"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                required
+                aria-required="true"
+                class="flex flex-1 w-full bg-white rounded-md border border-solid border-zinc-300 min-h-[174px] p-3 max-md:max-w-full"
+              ></textarea>
+            </div>
+
+            <fieldset
+              class="flex flex-col grow shrink min-w-[240px] w-[917px] max-md:max-w-full"
+            >
+              <p class="text-xs leading-5 text-zinc-800 max-md:max-w-full">
+                Get service announcements and the latest VCG news by email.
+                We'll always treat your details with the utmost care. You can,
+                of course, opt out of these communications at any time by
+                contacting us. See our Privacy Policy for more info.
+              </p>
+
+              <div
+                class="flex flex-wrap gap-5 items-center mt-5 w-full max-md:max-w-full"
+              >
+                <div class="flex gap-2.5 items-center">
+                  <input
+                    type="radio"
+                    id="opt-in"
+                    name="newsletter"
+                    value="yes"
+                    class="w-5 h-5 bg-white rounded-xl border border-solid border-zinc-300"
+                  />
+                  <label for="opt-in" class="text-xs text-zinc-800"
+                    >Yes please, I'd like to hear about latest news and
+                    information</label
+                  >
+                </div>
+              </div>
+
+              <div
+                class="flex flex-wrap gap-5 items-center mt-5 w-full max-md:max-w-full"
+              >
+                <div class="flex gap-2.5 items-center">
+                  <input
+                    type="radio"
+                    id="opt-out"
+                    name="newsletter"
+                    value="no"
+                    class="w-5 h-5 bg-white rounded-xl border border-solid border-zinc-300"
+                  />
+                  <label for="opt-out" class="text-xs text-zinc-800"
+                    >No thanks, I don't want to hear about latest news and
+                    information</label
+                  >
+                </div>
+              </div>
+            </fieldset>
+
+            <img
+              loading="lazy"
+              sizes="(max-width: 638px) 50vw, (max-width: 998px) 32vw, 23vw"
+              src="https://cdn.builder.io/api/v1/image/assets/103b8e0482a24683b7d403ff18ee39c1/8ad98deaf835cd72b7f510599865cd333f4ddc9301dd03d3872b4709bc694c73?apiKey=2e62dfcc8761461495e7df443835bdaa&width=315"
+              alt=""
+              class="object-contain rounded-none aspect-[3.94] min-w-[240px] w-[315px]"
+            />
+
+            <div
+              class="flex flex-col grow shrink items-start min-w-[240px] w-[917px] max-md:max-w-full"
+            >
+              <button
+                type="submit"
+                class="overflow-hidden gap-2.5 px-5 py-4 bg-green-400 rounded-md text-sm font-semibold leading-none text-white"
+              >
+                Send Enquiry
+              </button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </section>
+    <!--contact hero ends-->
+
+    <!-- location starts-->
+    <section
+      class="flex overflow-hidden flex-col justify-center items-center self-stretch py-10 bg-white text-zinc-800"
+      aria-labelledby="locations-heading"
+    >
+      <header
+        class="flex flex-col justify-center items-center px-5 w-full max-w-[1200px] max-md:max-w-full"
+      >
+        <h2
+          id="locations-heading"
+          class="text-4xl font-bold leading-none text-center whitespace-nowrap w-[1180px] max-w-full"
+        >
+          Locations
+        </h2>
+      </header>
+
+      <div
+        class="flex flex-wrap gap-5 items-start self-center px-5 mt-10 max-w-full w-[1200px]"
+      >
+        <article class="box-border flex relative flex-col shrink-0 w-full">
+          <div class="flex gap-5 max-md:flex-col">
+            <section class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+              <article
+                class="flex flex-col flex-1 shrink justify-center p-8 bg-gray-100 rounded-xl basis-0 min-w-[320px] max-md:px-5 max-md:max-w-full"
+                aria-labelledby="stockport-heading"
+              >
+                <div class="flex flex-col items-start w-full max-md:max-w-full">
+                  <header
+                    class="flex gap-2.5 items-center text-xl font-semibold leading-tight whitespace-nowrap"
+                  >
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/103b8e0482a24683b7d403ff18ee39c1/75690b8fb676b72ecd183546338b57f529253a42b89d5385194f41aaf1ed4d3a?apiKey=2e62dfcc8761461495e7df443835bdaa&width=40"
+                      alt="Stockport office location icon"
+                      class="object-contain shrink-0 self-stretch my-auto w-10 bg-blend-normal aspect-square"
+                      width="40"
+                      height="40"
+                    />
+                    <h3 id="stockport-heading" class="self-stretch my-auto">
+                      Stockport
+                    </h3>
+                  </header>
+                  <address
+                    class="flex flex-col mt-5 w-80 max-w-full text-base not-italic"
+                  >
+                    <p>1 Signal Point</p>
+                    <p class="mt-1.5">Bredbury Parkway</p>
+                    <p class="mt-1.5">Bredbury</p>
+                    <p class="mt-1.5">Stockport</p>
+                    <p class="mt-1.5">SK6 2SN</p>
+                  </address>
+                </div>
+              </article>
+            </section>
+
+            <section
+              class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full"
+            >
+              <article
+                class="flex flex-col flex-1 shrink justify-center p-8 bg-gray-100 rounded-xl basis-0 min-w-[320px] max-md:px-5 max-md:max-w-full"
+                aria-labelledby="cheltenham-heading"
+              >
+                <div class="flex flex-col items-start w-full max-md:max-w-full">
+                  <header
+                    class="flex gap-2.5 items-center text-xl font-semibold leading-tight whitespace-nowrap"
+                  >
+                    <img
+                      loading="lazy"
+                      src="https://cdn.builder.io/api/v1/image/assets/103b8e0482a24683b7d403ff18ee39c1/75690b8fb676b72ecd183546338b57f529253a42b89d5385194f41aaf1ed4d3a?apiKey=2e62dfcc8761461495e7df443835bdaa&width=40"
+                      alt="Cheltenham office location icon"
+                      class="object-contain shrink-0 self-stretch my-auto w-10 bg-blend-normal aspect-square"
+                      width="40"
+                      height="40"
+                    />
+                    <h3 id="cheltenham-heading" class="self-stretch my-auto">
+                      Cheltenham
+                    </h3>
+                  </header>
+                  <address
+                    class="flex flex-col mt-5 w-80 max-w-full text-base not-italic"
+                  >
+                    <p>Clockwise, Festival House</p>
+                    <p class="mt-1.5">Jessop Avenue</p>
+                    <p class="mt-1.5">Cheltenham</p>
+                    <p class="mt-1.5">Gloucestershire</p>
+                    <p class="mt-1.5">GL50 3SH</p>
+                  </address>
+                </div>
+              </article>
+            </section>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- location ends-->
+
+    <!-- footer starts -->
+    <footer class="flex flex-col">
+      <section
+        class="flex flex-col justify-center items-center py-20 w-full bg-black max-md:px-5 max-md:max-w-full"
+      >
+        <div class="flex flex-col px-5 w-full max-w-[1200px] max-md:max-w-full">
+          <div
+            class="flex flex-wrap gap-10 justify-between items-start max-w-full w-[1131px]"
+          >
+            <section class="flex flex-col w-[198px]">
+              <div
+                class="flex flex-col w-full text-xl font-semibold leading-tight text-white"
+              >
+                <a href="./index.html">
+                  <img
+                    loading="lazy"
+                    sizes="(max-width: 638px) 14vw, (max-width: 998px) 9vw, 7vw"
+                    src="https://cdn.builder.io/api/v1/image/assets/103b8e0482a24683b7d403ff18ee39c1/24497bc95595b05cadd89f730d115a23af128cada06afc34130c4c74e358c1c6?apiKey=2e62dfcc8761461495e7df443835bdaa&width=88"
+                    alt="VCG Logo"
+                    class="object-contain cursor-pointer pointer-events-auto aspect-[2.93] w-[88px]"
+                  />
+                </a>
+                <address class="flex flex-col mt-8 w-full not-italic">
+                  <a
+                    href="tel:01614061820"
+                    class="flex gap-2.5 items-center self-start text-white hover:text-green-400 transition-colors"
+                  >
+                    <img
+                      loading="lazy"
+                      sizes="(max-width: 638px) 4vw, (max-width: 998px) 3vw, 2vw"
+                      src="https://cdn.builder.io/api/v1/image/assets/103b8e0482a24683b7d403ff18ee39c1/0d609d8febdb9e27c59f4a1b5c1c60e11bc5ee4ae7960f0d77caee2c5b76b595?apiKey=2e62dfcc8761461495e7df443835bdaa&width=24"
+                      alt=""
+                      class="object-contain shrink-0 self-stretch my-auto w-6 bg-blend-normal aspect-square"
+                    />
+                    <span class="self-stretch my-auto font-['Montserrat']"
+                      >0161 406 1820</span
+                    >
+                  </a>
+                  <a
+                    href="mailto:info@vcg.group"
+                    class="flex gap-2.5 items-center mt-5 w-full whitespace-nowrap text-white hover:text-green-400 transition-colors"
+                  >
+                    <img
+                      loading="lazy"
+                      sizes="(max-width: 638px) 4vw, (max-width: 998px) 3vw, 2vw"
+                      src="https://cdn.builder.io/api/v1/image/assets/103b8e0482a24683b7d403ff18ee39c1/e0add20162338de3741064a103e4b429c87cf2d8faca173e79423caeeef28e88?apiKey=2e62dfcc8761461495e7df443835bdaa&width=24"
+                      alt=""
+                      class="object-contain shrink-0 self-stretch my-auto w-6 bg-blend-normal aspect-square"
+                    />
+                    <span class="self-stretch my-auto font-['Montserrat']"
+                      >info@vcg.group</span
+                    >
+                  </a>
+                </address>
+              </div>
+              <nav
+                class="flex gap-5 items-center self-start mt-12 max-md:mt-10"
+                aria-label="Social Media Links"
+              >
+                <a href="#" class="hover:opacity-80 transition-opacity">
+                  <img
+                    loading="lazy"
+                    sizes="(max-width: 638px) 6vw, (max-width: 998px) 4vw, 3vw"
+                    src="https://cdn.builder.io/api/v1/image/assets/103b8e0482a24683b7d403ff18ee39c1/0a5e2cbaf389fdd15e8bfd975ff9a96c3bf4023b8936eaedf02cfc826605c26b?apiKey=2e62dfcc8761461495e7df443835bdaa&width=32"
+                    alt="Facebook"
+                    class="object-contain shrink-0 self-stretch my-auto w-8 bg-blend-normal cursor-pointer pointer-events-auto aspect-[1.07]"
+                  />
+                </a>
+                <a href="#" class="hover:opacity-80 transition-opacity">
+                  <img
+                    loading="lazy"
+                    sizes="(max-width: 638px) 6vw, (max-width: 998px) 4vw, 3vw"
+                    src="https://cdn.builder.io/api/v1/image/assets/103b8e0482a24683b7d403ff18ee39c1/e977b6ff43ad9059b48669d9501394b5b68ceb92a789872d99036704172fb65d?apiKey=2e62dfcc8761461495e7df443835bdaa&width=32"
+                    alt="Twitter"
+                    class="object-contain shrink-0 self-stretch my-auto w-8 bg-blend-normal cursor-pointer pointer-events-auto aspect-[1.07]"
+                  />
+                </a>
+                <a href="#" class="hover:opacity-80 transition-opacity">
+                  <img
+                    loading="lazy"
+                    sizes="(max-width: 638px) 6vw, (max-width: 998px) 4vw, 3vw"
+                    src="https://cdn.builder.io/api/v1/image/assets/103b8e0482a24683b7d403ff18ee39c1/4c7f828017432426d36f21f71f820fa257737cccc3cc70b885b6e8d458f89f18?apiKey=2e62dfcc8761461495e7df443835bdaa&width=32"
+                    alt="LinkedIn"
+                    class="object-contain shrink-0 self-stretch my-auto w-8 bg-blend-normal cursor-pointer pointer-events-auto aspect-[1.07]"
+                  />
+                </a>
+              </nav>
+            </section>
+            <nav
+              class="flex flex-col items-start text-sm font-semibold leading-none text-white rounded-none w-[231px]"
+              aria-label="Solutions Navigation"
+            >
+              <h2 class="text-xl leading-tight text-green-400">Solutions</h2>
+              <a
+                href="./network-transformation.html"
+                class="mt-5 text-white hover:text-green-400 transition-colors"
+                >Network Transformation</a
+              >
+              <a
+                href="./network-security.html"
+                class="mt-2.5 text-white hover:text-green-400 font-['Montserrat'] transition-colors"
+                >Network Security</a
+              >
+              <a
+                href="./network-lifecycle.html"
+                class="self-stretch mt-2.5 text-white font-['Montserrat'] hover:text-green-400 transition-colors"
+                >Network Lifecycle Management</a
+              >
+              <a
+                href="./network-automation.html"
+                class="mt-2.5 text-white hover:text-green-400 font-['Montserrat'] transition-colors"
+                >Network Automation & AI</a
+              >
+            </nav>
+          </div>
+          <div
+            class="flex flex-col mt-12 w-full text-xs font-semibold leading-none text-white max-md:mt-10 max-md:max-w-full"
+          >
+            <hr
+              class="w-full border border-white border-solid min-h-[1px] max-md:max-w-full"
+            />
+            <nav
+              class="flex flex-wrap gap-10 items-center self-center mt-8 max-md:max-w-full"
+              aria-label="Legal Links"
+            >
+              <p class="self-stretch my-auto font-['Montserrat']">© 2024 VCG</p>
+              <a
+                href="./cookie-policy.html"
+                class="self-stretch my-auto text-white font-['Montserrat'] hover:text-green-400 transition-colors"
+                >Cookie Policy</a
+              >
+              <a
+                href="./privacy-policy.html"
+                class="self-stretch my-auto text-white font-['Montserrat'] hover:text-green-400 transition-colors"
+                >Privacy Policy</a
+              >
+              <a
+                href="./terms-condition.html"
+                class="self-stretch my-auto text-white font-['Montserrat'] hover:text-green-400 transition-colors"
+                >Terms & Conditions</a
+              >
+              <a
+                href="./moder-slavery-statement.html"
+                class="self-stretch my-auto text-white font-['Montserrat'] hover:text-green-400 transition-colors"
+                >Modern Slavery Statement</a
+              >
+              <a
+                href="./sitemap.html"
+                class="self-stretch my-auto text-white font-['Montserrat'] hover:text-green-400 transition-colors"
+                >Sitemap</a
+              >
+            </nav>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- footer ends -->
+  </body>
+</html>
